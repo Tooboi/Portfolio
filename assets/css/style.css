@@ -55,9 +55,9 @@ nav h1 {
   background-color: transparent;
 }
 main {
-  padding-top: 5rem;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 .about-me {
   display: grid;
@@ -67,7 +67,7 @@ main {
     "A C C C";
   align-items: center;
   border-bottom: 2px solid black;
-  width: 100%;
+  max-height: 12rem;
 }
 .about-me img {
   grid-area: A;
@@ -87,6 +87,28 @@ main {
   font-size: var(--f4);
   font-weight: var(--fw2);
 }
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#main-image {
+width: 90%;
+}
+.portfolio a img{
+width: 45%;
+}
+
+.portfolio h2 {
+  font-family: var(--font2);
+  font-size: var(--f3);
+  font-weight: var(--fw1-5);
+  padding: 2rem;
+}
+
+#contact {
+  display: flex;
+}
 @media screen and (max-width: 992px) {
 }
 @media screen and (max-width: 768px) {
@@ -102,6 +124,6 @@ main {
     padding-bottom: 0.5rem;
   }
   main {
-    padding-top: 8rem;
+    padding-top: 6.8rem;
   }
 }
