@@ -1,53 +1,77 @@
 :root {
-    --fw1: 800;
-    --fw2: 600;
-    --fw3: 400;
-    --f1: 10rem;
-    --f2: 3rem;
-    --f3: 1.2rem; 
-    --font1: 'Kanit', sans-serif;
-    --font2: 'Assistant', sans-serif;
-    --colp: #000;
+  --fw1: 800;
+  --fw2: 600;
+  --fw3: 400;
+  --f1: 10rem;
+  --f2: 3rem;
+  --f3: 1.2rem;
+  --font1: "Kanit", sans-serif;
+  --font2: "Assistant", sans-serif;
+  --colp: #000;
 }
 
+@media screen and (max-width: 992px) {
+  /* header h1 {
+        font-size: var(--f3);
+    } */
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
+body    {
+    width: 100vw;
+}
 * {
-    margin: 0;
-    padding: 0; 
-    background-color: #D5D0C4;   
+  margin: 0;
+  padding: 0;
+  background-color: #d5d0c4;
+}
+nav {
+
+
+  border-bottom: 0.125rem solid var(--colp);
+}
+nav ul {
+  display: flex;
+  
+}
+nav li {
+  list-style-type: none;
+  padding: 1rem 2rem;
+display: inline;
+}
+nav a {
+  text-decoration: none;
+  color: var(--colp);
+  font-family: var(--font2);
+  font-weight: var(--fw2);
+  font-size: var(--f3);
 }
 header {
-    position: relative;
-    top: 0;
-}
-header ul{
-    position: relative;
-    text-align: right;
-    border-bottom: .125rem solid var(--colp);
-    padding: 1rem;
-}
-header li {
-    display: inline;
-    padding: 1rem 3rem;
-
-}
-header a {
-    text-decoration: none;
-    color: var(--colp);
-    font-family: var(--font2);
-    font-weight: var(--fw2);
-    font-size: var(--f3);
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+  width: 80vw;
+  padding: 2rem;
 }
 header h1 {
-    font-weight: var(--fw1);
-    font-size: var(--f1);
-    font-family: var(--font2);
-    line-height: 6rem;
-    display: inline-block;
+  font-weight: var(--fw1);
+  font-size: var(--f1);
+  font-family: var(--font2);
+  line-height: 6rem;
+  display: inline-block;
+  text-align: center;
 }
-.name {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    width: 80vw;
-    padding: 2rem;
+main {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+header img {
+  max-height: 8rem;
+}
+.container {
+  display: flex;
+  padding: 2rem;
 }
