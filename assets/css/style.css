@@ -1,26 +1,20 @@
 :root {
   --fw1: 800;
+  --fw1-5: 700;
   --fw2: 600;
   --fw3: 400;
   --f1: 10rem;
   --f2: 3rem;
-  --f3: 1.2rem;
+  --f3: 1.6rem;
+  --f4: 1.2rem;
   --font1: "Kanit", sans-serif;
   --font2: "Assistant", sans-serif;
   --colp: #000;
 }
-
-@media screen and (max-width: 992px) {
-  /* header h1 {
-        font-size: var(--f3);
-    } */
-}
-@media screen and (max-width: 768px) {
-}
-@media screen and (max-width: 576px) {
-}
-body    {
-    width: 100vw;
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 * {
   margin: 0;
@@ -28,50 +22,86 @@ body    {
   background-color: #d5d0c4;
 }
 nav {
-
-
-  border-bottom: 0.125rem solid var(--colp);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--colp);
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 nav ul {
   display: flex;
-  
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: transparent;
 }
 nav li {
   list-style-type: none;
-  padding: 1rem 2rem;
-display: inline;
+  padding: 1rem var(--f4);
 }
 nav a {
   text-decoration: none;
   color: var(--colp);
   font-family: var(--font2);
   font-weight: var(--fw2);
-  font-size: var(--f3);
+  font-size: var(--f4);
 }
-header {
-  display: flex;
-  margin: 0;
-  justify-content: space-around;
-  width: 80vw;
-  padding: 2rem;
-}
-header h1 {
+nav h1 {
+  padding: 1rem 2rem;
   font-weight: var(--fw1);
-  font-size: var(--f1);
+  font-size: var(--f3);
   font-family: var(--font2);
-  line-height: 6rem;
-  display: inline-block;
-  text-align: center;
+  background-color: transparent;
 }
 main {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
+  padding-top: 5rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
-header img {
-  max-height: 8rem;
+.about-me {
+  display: grid;
+  grid-template-areas:
+    "A . B ."
+    "A C C C"
+    "A C C C";
+  align-items: center;
+  border-bottom: 2px solid black;
+  width: 100%;
 }
-.container {
-  display: flex;
-  padding: 2rem;
+.about-me img {
+  grid-area: A;
+  max-height: 10rem;
+}
+.about-me h2 {
+  grid-area: B;
+  font-family: var(--font2);
+  font-size: var(--f3);
+  font-weight: var(--fw1-5);
+  text-align: center;
+}
+.about-me h3 {
+  grid-area: C;
+  text-align: center;
+  font-family: var(--font2);
+  font-size: var(--f4);
+  font-weight: var(--fw2);
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  nav li {
+    padding-top: 0.5rem;
+  }
+  nav h1 {
+    padding-bottom: 0.5rem;
+  }
+  main {
+    padding-top: 8rem;
+  }
 }
