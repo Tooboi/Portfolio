@@ -1,5 +1,53 @@
 :root {
+    --fw1: 800;
+    --fw2: 600;
+    --fw3: 400;
+    --f1: 10rem;
+    --f2: 3rem;
+    --f3: 1.2rem; 
+    --font1: 'Kanit', sans-serif;
+    --font2: 'Assistant', sans-serif;
+    --colp: #000;
+}
+
+* {
     margin: 0;
-    padding: 0;
-    background-color: #222;
+    padding: 0; 
+    background-color: #D5D0C4;   
+}
+header {
+    position: relative;
+    top: 0;
+}
+header ul{
+    position: relative;
+    text-align: right;
+    border-bottom: .125rem solid var(--colp);
+    padding: 1rem;
+}
+header li {
+    display: inline;
+    padding: 1rem 3rem;
+
+}
+header a {
+    text-decoration: none;
+    color: var(--colp);
+    font-family: var(--font2);
+    font-weight: var(--fw2);
+    font-size: var(--f3);
+}
+header h1 {
+    font-weight: var(--fw1);
+    font-size: var(--f1);
+    font-family: var(--font2);
+    line-height: 6rem;
+    display: inline-block;
+}
+.name {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    padding: 2rem;
 }
