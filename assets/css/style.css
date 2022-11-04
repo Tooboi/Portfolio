@@ -7,6 +7,7 @@
   --f2: 3rem;
   --f3: 1.6rem;
   --f4: 1.2rem;
+  --line: 3px;
   --font1: "Kanit", sans-serif;
   --font2: "Assistant", sans-serif;
   --colp: #000;
@@ -15,6 +16,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
 }
 * {
   margin: 0;
@@ -25,11 +27,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--colp);
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 1;
+  border-bottom: var(--line) solid var(--colp);
 }
 nav ul {
   display: flex;
@@ -55,92 +53,43 @@ nav h1 {
   font-family: var(--font2);
   background-color: transparent;
 }
-main {
-  padding-top: 4rem;
+
+.sub {
   display: flex;
-  flex-direction: column;
-}
-.about-me {
-  display: grid;
-  grid-template-areas:
-    "A B"
-    "A C"
-    "A C";
-  justify-content: center;
-  align-items: center;
-  max-width: 90vw;
-  margin: 0 auto;
-  padding: 1rem;
-}
-.about-me img {
-  grid-area: A;
-  max-height: 10rem;
-}
-.about-me h2 {
-  grid-area: B;
-  font-family: var(--font1);
-  font-size: var(--f3);
-  font-weight: var(--fw1-5);
-  text-align: center;
-  padding: 1rem;
-}
-.about-me h3 {
-  grid-area: C;
-  text-align: center;
-  font-family: var(--font1);
-  font-size: var(--f4);
-  font-weight: var(--fw2);
-}
-.portfolio {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.portfolio h2 {
-  font-family: var(--font1);
-  font-size: var(--f3);
-  font-weight: var(--fw1-5);
-  text-align: center;
-  padding-bottom: 2rem;
-}
-.project {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  border-radius: var(--f3);
-  padding: 1rem 0;
+  background-image: url(../images/var3.png);
+  height: 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: var(--line) solid var(--colp);
+  width: 100%;
 }
-.project h2 {
+.sub h2 {
   position: absolute;
-  bottom: var(--f4);
-  left: 0;
-  width: 80%;
-  padding: 0;
-  background-color: var(--colp);
-  color: var(--colm);
-  border-bottom-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  bottom: 1rem;
+  right: 3rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: var(--fw1);
+  font-size: var(--f3);
+  font-family: var(--font2);
 }
-.project img {
-  max-width: 30vw;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  object-fit: cover;
-  border-radius: 2rem;
-}
-#primary img {
-max-width: 60vw;
-}
-#primary h2 {
-  padding: 1rem;
-}
-.contact {
+.about {
+  position: relative;
   display: flex;
 }
-.contact h2 {
-  font-family: var(--font1);
+main {
+  position: relative;
+  display: flex;
+}
+.side-text {
+
+}
+.side-text h2 {
+  font-weight: var(--fw1);
   font-size: var(--f3);
-  font-weight: var(--fw1-5);
+  font-family: var(--font2);
 }
 @media screen and (max-width: 992px) {
 }
