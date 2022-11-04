@@ -10,16 +10,16 @@
   --font1: "Kanit", sans-serif;
   --font2: "Assistant", sans-serif;
   --colp: #000;
+  --colm: #d5d0c4;
 }
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 * {
   margin: 0;
   padding: 0;
-  background-color: #d5d0c4;
+  background-color: var(--colm);
 }
 nav {
   display: flex;
@@ -29,6 +29,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 1;
 }
 nav ul {
   display: flex;
@@ -62,12 +63,14 @@ main {
 .about-me {
   display: grid;
   grid-template-areas:
-    "A . B ."
-    "A C C C"
-    "A C C C";
+    "A B"
+    "A C"
+    "A C";
+  justify-content: center;
   align-items: center;
-  border-bottom: 2px solid black;
-  max-height: 12rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 1rem;
 }
 .about-me img {
   grid-area: A;
@@ -75,39 +78,69 @@ main {
 }
 .about-me h2 {
   grid-area: B;
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: var(--f3);
   font-weight: var(--fw1-5);
   text-align: center;
+  padding: 1rem;
 }
 .about-me h3 {
   grid-area: C;
   text-align: center;
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: var(--f4);
   font-weight: var(--fw2);
 }
 .portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
-#main-image {
-width: 90%;
-}
-.portfolio a img{
-width: 45%;
-}
-
 .portfolio h2 {
-  font-family: var(--font2);
+  font-family: var(--font1);
   font-size: var(--f3);
   font-weight: var(--fw1-5);
-  padding: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
 }
-
-#contact {
+.project {
   display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: var(--f3);
+  padding: 1rem 0;
+}
+.project h2 {
+  position: absolute;
+  bottom: var(--f4);
+  left: 0;
+  width: 80%;
+  padding: 0;
+  background-color: var(--colp);
+  color: var(--colm);
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.project img {
+  max-width: 30vw;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+#primary img {
+max-width: 60vw;
+}
+#primary h2 {
+  padding: 1rem;
+}
+.contact {
+  display: flex;
+}
+.contact h2 {
+  font-family: var(--font1);
+  font-size: var(--f3);
+  font-weight: var(--fw1-5);
 }
 @media screen and (max-width: 992px) {
 }
