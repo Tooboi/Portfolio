@@ -3,6 +3,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/tooboi/portfolio?color=brightgreen)
 ![GitHub language count](https://img.shields.io/github/languages/count/tooboi/portfolio?color=brightgreen)
 ![GitHub](https://img.shields.io/github/license/tooboi/portfolio?color=brightgreen)
+
 ## Description
 
 - A place for future employers to look at my previous project portfolio
