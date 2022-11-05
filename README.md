@@ -19,7 +19,7 @@ N/A
 
 Use the following link to visit deployed web page: [Following Link](https://tooboi.github.io/Portfolio/)
 
-![screenshot of web page](/assets/images/Portfolio1capture.png)
+![screenshot of web page](/assets/images/Portfolio1capture.PNG)
 
 ## Credits
 
