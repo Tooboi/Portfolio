@@ -1,18 +1,3 @@
-<!-- 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,16 +23,21 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
       <!-- navigation bar / header -->
       <h1>JOSH PICA</h1>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#about"><h3>About</h3></a>
+        </li>
+        <li>
+          <a href="#portfolio"><h3>Portfolio</h3></a>
+        </li>
+        <li>
+          <a href="#contact"><h3>Contact</h3></a>
+        </li>
       </ul>
     </nav>
-
     <!-- Header -->
     <section class="sub">
       <img src="./assets/images/PrarieDawg.png" alt="prairie dog render" />
-      <h2>Important Text</h2>
+      <h2>A Good Title</h2>
     </section>
     <section class="about">
       <aside class="side-text">
@@ -65,7 +55,6 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
         </p>
       </article>
     </section>
-
     <!-- titled images of my applications, click on them to visit deployed site -->
     <main>
       <aside class="side-text">
@@ -73,35 +62,45 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
       </aside>
       <figure class="projects">
         <figcaption id="main-image">
-          <a href="#"><img src="./assets/images/var.png" alt="main project"></a>
+          <a href="https://tooboi.github.io/Horiseon-Refactor/"
+            ><img src="./assets/images/digital-marketing-meeting.jpg" alt="main project"
+          /></a>
           <section>
-            <h2>Main Project</h2>
+            <h2>Horiseon Refactor</h2>
             <h3>HTML, CSS</h3>
           </section>
         </figcaption>
         <figcaption>
-          <a href="#"><img src="./assets/images/var2.png" alt="main project"></a>
+          <a href="https://www.google.com/"
+            ><img src="./assets/images/var2.png" alt="main project"
+          /></a>
           <section>
             <h2>Second Project</h2>
             <h3>Git</h3>
           </section>
         </figcaption>
         <figcaption>
-          <a href="#"><img src="./assets/images/var2.png" alt="main project"></a>
+          <a href="https://www.google.com/"
+            ><img src="./assets/images/var2.png" alt="main project"
+          /></a>
           <section>
             <h2>Third Project</h2>
             <h3>JavaScript</h3>
           </section>
         </figcaption>
         <figcaption>
-          <a href="#"><img src="./assets/images/var3.png" alt="main project"></a>
+          <a href="https://www.google.com/"
+            ><img src="./assets/images/var3.png" alt="main project"
+          /></a>
           <section>
             <h2>Fourth Project</h2>
             <h3>HTML, React</h3>
           </section>
         </figcaption>
         <figcaption>
-          <a href="#"><img src="./assets/images/var3.png" alt="main project"></a>
+          <a href="https://www.google.com/"
+            ><img src="./assets/images/var3.png" alt="main project"
+          /></a>
           <section>
             <h2>Fifth Project</h2>
             <h3>HTML, CSS, Git</h3>
@@ -109,7 +108,6 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
         </figcaption>
       </figure>
     </main>
-
     <!-- Contact info -->
     <section class="contact">
       <aside class="side-text">
@@ -117,10 +115,10 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
       </aside>
       <article>
         <h2>1-800-CARS4KIDZ</h2>
-        <h2>myemail@website.web</h2>
-        <h2>GitHub</h2>
-        <h2>Social</h2>
-        <h2>Social 2</h2>
+        <a href="mailto"><h2>myemail@website.web</h2></a>
+        <a href="https://github.com/Tooboi"><h2>GitHub</h2></a>
+        <a href="https://www.google.com/"><h2>Social</h2></a>
+        <a href="https://www.google.com/"><h2>Social 2</h2></a>
       </article>
     </section>
     <footer></footer>
