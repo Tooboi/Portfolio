@@ -56,6 +56,9 @@ nav ul li a {
   font-weight: var(--fw2);
   font-size: var(--f4);
 }
+nav ul li a h3 {
+  transition: all 300ms;
+}
 nav ul li a h3:hover {
   transform: scale(105%);
 }
@@ -175,7 +178,7 @@ figcaption img:active {
   padding: 0.5rem;
   background-color: var(--colp);
   color: var(--colm);
-  transition: all 0.3s;
+  transition: all 300ms;
 }
 .projects h2 {
   font-weight: var(--fw1);
