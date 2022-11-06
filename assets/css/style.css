@@ -88,7 +88,7 @@ nav h1 {
   transition: all ease-out 300ms;
 }
 .sub img:hover {
-  rotate: 0.05turn;
+  transform: rotate(0.05turn);
 }
 .sub h2 {
   position: absolute;
@@ -230,7 +230,7 @@ figcaption img:active {
   text-decoration: none;
   color: var(--colp);
 }
-/* media querys */
+/* media query */
 /* medium screens */
 @media screen and (max-width: 992px) {
   .projects figcaption section {
