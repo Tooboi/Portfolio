@@ -1,8 +1,8 @@
 # Personal Projects Portfolio
 
-![GitHub top language](https://img.shields.io/github/languages/top/tooboi/portfolio?color=brightgreen)
-![GitHub language count](https://img.shields.io/github/languages/count/tooboi/portfolio?color=brightgreen)
-![GitHub](https://img.shields.io/github/license/tooboi/portfolio?color=brightgreen)
+![GitHub top language](https://img.shields.io/github/languages/top/tooboi/portfolio?color=%23d5d0c4)
+![GitHub language count](https://img.shields.io/github/languages/count/tooboi/portfolio?color=%23d5d0c4)
+![GitHub](https://img.shields.io/github/license/tooboi/portfolio?color=%23d5d0c4)
 
 ## Description
 
